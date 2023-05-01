@@ -33,7 +33,6 @@ export default function BookUpload() {
       condition: condition,
       ownerId: createRandomID("user"),
     };
-    console.log(book);
     const response = await fetch("http://localhost:3001/book", {
       method: "POST",
       mode: "cors",
