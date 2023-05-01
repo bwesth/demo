@@ -7,20 +7,20 @@ import RoomList from "./Components/RoomList";
 import SignUp from "./Components/SignUp";
 
 function App() {
-  const [user, setUser] = useState({id: "test"});
+  const [user, setUser] = useState();
 
   return (
     <div className="App">
-      {/* {user ? (
-        <> */}
-          {/* <ImageUpload />
+      {user ? (
+        <>
+          <ImageUpload />
           <BookUpload />
-          <Books books={user.books}/> */}
+          <Books books={user.books}/>
           <RoomList user={user} />
-        {/* </>
+        </>
       ) : (
         <SignUp user={user} setUser={setUser} />
-      )} */}
+      )}
     </div>
   );
 }
